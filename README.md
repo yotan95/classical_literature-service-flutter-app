@@ -51,17 +51,13 @@
 
 ### 스크린샷
 
-> 아직 실제 기기 스크린샷이 준비되지 않아 자리만 표시해 두었습니다. `docs/screenshots/`
-> 폴더에 아래 파일명으로 이미지를 추가하면 표가 그대로 채워집니다. (시뮬레이터/실기기에서
-> `flutter run` 후 캡처 → PNG로 저장 → 폭 300px 내외 권장)
-
 | 온보딩 | 창작하기 | AI 생성중 |
 |:---:|:---:|:---:|
 | ![온보딩](docs/screenshots/onboarding.png) | ![창작하기](docs/screenshots/create_main.png) | ![생성중](docs/screenshots/ai_generating.png) |
 
-| 대사극 결과 | 오디오극 결과 | 내 서재 |
+| 대사극 결과 | 오디오극 결과 | 내 서재 | 책 내용 |
 |:---:|:---:|:---:|
-| ![대사극 결과](docs/screenshots/dialogue_result.png) | ![오디오극 결과](docs/screenshots/audio_result.png) | ![내 서재](docs/screenshots/library.png) |
+| ![대사극 결과](docs/screenshots/dialogue_result.png) | ![오디오극 결과](docs/screenshots/audio_result.png) | ![내 서재](docs/screenshots/library.png) | ![책 내용] (docs/screenshots/book_detail.png) |
 
 <details>
 <summary>지원하는 고전 원작 표지(에셋) 미리보기</summary>
