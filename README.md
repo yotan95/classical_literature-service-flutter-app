@@ -51,15 +51,11 @@
 
 ### 스크린샷
 
-| 온보딩 | 창작하기 | AI 생성중 |
-|:---:|:---:|:---:|
-| ![온보딩](docs/screenshots/onboarding.png) | ![창작하기](docs/screenshots/create_main.png) | ![생성중](docs/screenshots/ai_generating.png) |
-| 대사극 결과 | 오디오극 결과 | 내 서재 | 책 내용 |
+| 온보딩 | 창작하기 | AI 생성중 | 책 내용 |
 |:---:|:---:|:---:|:---:|
-| ![대사극 결과](docs/screenshots/dialogue_result.png) | ![오디오극 결과](docs/screenshots/audio_result.png) | ![내 서재](docs/screenshots/library.png) |
-| 책 내용 |
-|:---:|
-| ![책 내용](docs/screenshots/book_detail.png) |
+| ![온보딩](docs/screenshots/onboarding.png) | ![창작하기](docs/screenshots/create_main.png) | ![생성중](docs/screenshots/ai_generating.png) | ![책 내용](docs/screenshots/book_detail.png) |
+| 대사극 결과 | 오디오극 결과 | 내 서재 |  |
+| ![대사극 결과](docs/screenshots/dialogue_result.png) | ![오디오극 결과](docs/screenshots/audio_result.png) | ![내 서재](docs/screenshots/library.png) |  |
 
 <details>
 <summary>지원하는 고전 원작 표지(에셋) 미리보기</summary>
@@ -196,13 +192,9 @@ meaning/hanja/note popup, and every generated creation is managed (CRUD) from "M
 
 ### Screenshots
 
-> Real device screenshots aren't captured yet — the table below is a placeholder. Drop PNGs with the
-> filenames shown into `docs/screenshots/` (capture via `flutter run` on a simulator/device, ~300px wide)
-> and the table will render them.
-
-| Onboarding | Create | AI Generating |
-|:---:|:---:|:---:|
-| ![Onboarding](docs/screenshots/onboarding.png) | ![Create](docs/screenshots/create_main.png) | ![Generating](docs/screenshots/ai_generating.png) |
+| Onboarding | Create | AI Generating | Book Detail |
+|:---:|:---:|:---:|:---:|
+| ![Onboarding](docs/screenshots/onboarding.png) | ![Create](docs/screenshots/create_main.png) | ![Generating](docs/screenshots/ai_generating.png) | ![Detail](docs/screenshots/book_detail.png) |
 
 | Dialogue Result | Audio Result | My Library |
 |:---:|:---:|:---:|
