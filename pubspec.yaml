@@ -1,0 +1,73 @@
+name: classic_theater
+description: 쉬운 고전 창작 극장 — 프래그먼트 (Material 3 base + adaptive Cupertino, Riverpod + Freezed)
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.5.1
+  freezed_annotation: ^2.4.4
+  shared_preferences: ^2.2.0 # 온보딩 '최초 1회' 플래그 + 앱 설정
+  path: ^1.9.0 # 경로 조합 p.join
+  # 로컬 DB (사용자 창작물·서재 — 휴대폰 샌드박스 SQLite 저장)
+  sqflite: ^2.3.3
+  # 오디오극 재생 — 서버 TTS 가 내려준 음성 바이트를 재생.
+  audioplayers: ^6.1.0
+  # 서버(FastAPI) 호출 — dio(어휘·TTS 등) + http(SSE /create 스트리밍)
+  dio: ^5.4.0
+  http: ^1.5.0 # POST /create SSE 스트리밍 (http.Client().send)
+  path_provider: ^2.1.5 # <app-docs>/created_data/ 경로 해석 (권한 불필요)
+  image_picker: ^1.1.2 # 창작물 표지 — 갤러리에서 사진 선택 (Android Photo Picker / iOS PHPicker)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.11
+  freezed: ^2.5.7
+  flutter_launcher_icons: ^0.14.4 # 앱 런처 아이콘(쉬운고전 표지) 생성
+
+# 런처 아이콘 생성:
+#   dart run flutter_launcher_icons
+# 표지: assets/icon/app_icon.png — Android adaptive 안전영역 여백은 도구 기본 16% inset이 처리
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  remove_alpha_ios: true
+  background_color_ios: "#FFFFFF"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    background_color: "#FFFFFF"
+    theme_color: "#3D8A65"
+  macos:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+
+# Freezed 코드 생성:
+#   dart run build_runner build --delete-conflicting-outputs
+#
+# Noto Sans KR 폰트를 쓰려면 assets 등록 후:
+# flutter:
+#   fonts:
+#     - family: NotoSansKR
+#       fonts:
+#         - asset: assets/fonts/NotoSansKR-Regular.ttf
+#         - asset: assets/fonts/NotoSansKR-Medium.ttf
+#           weight: 500
+#         - asset: assets/fonts/NotoSansKR-Bold.ttf
+#           weight: 700
+flutter:
+  uses-material-design: true
+  assets:
+    # 책 데이터는 서버(GET /books)에서 받으므로 로컬 번들 에셋은 표지 폴백 이미지만 둔다.
+    - assets/images/

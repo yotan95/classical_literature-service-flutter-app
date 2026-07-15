@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  네트워크 보안 설정.
+  개발용 로컬 FastAPI 서버(HTTP)에만 평문 트래픽을 허용한다.
+  - 10.0.2.2 : 안드로이드 에뮬레이터에서 PC(host)의 localhost 를 가리키는 주소
+  - localhost / 127.0.0.1 : 기기 자체 로컬
+  그 외 모든 도메인은 기본값(HTTPS 강제)을 유지한다.
+  실서버는 HTTPS 를 쓰므로 별도 예외가 필요 없다.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+    </domain-config>
+</network-security-config>
