@@ -56,7 +56,7 @@
 | ![온보딩](docs/screenshots/onboarding.png) | ![창작하기](docs/screenshots/create_main.png) | ![생성중](docs/screenshots/ai_generating.png) |
 
 | 대사극 결과 | 오디오극 결과 | 내 서재 | 책 내용 |
-|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|
 | ![대사극 결과](docs/screenshots/dialogue_result.png) | ![오디오극 결과](docs/screenshots/audio_result.png) | ![내 서재](docs/screenshots/library.png) | ![책 내용] (docs/screenshots/book_detail.png) |
 
 <details>
